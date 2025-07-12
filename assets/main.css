@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
     --big-stone-black:  #00000055;
@@ -20,7 +21,7 @@
     --white: #ffffff;
     --black: #000000;
 
-    --main-font: "Satoshi", sans-serif;
+    --main-font: "Urbanist", sans-serif;
     --secondary-font: "Anton", sans-serif;
 }
 
@@ -86,7 +87,6 @@ body {
 #main-content {
     height: 100vh;
     display: flex;
-    padding: 20px;
     justify-content: center;
     align-items: center;
 }
@@ -148,8 +148,9 @@ p {
     margin: 2%;
     text-decoration: none;
     color: var(--white);
+    font-family: var(--main-font);
     font-size: 14px;
-    font-weight: 200;
+    font-weight: 500;
     background-color: var(--light-blue);
     padding: .5rem .9rem;
     border-radius: 50px;
@@ -321,8 +322,8 @@ p {
 }
 
 @media (max-width: 490px) {
-    .loading-image {
-        max-width: 15rem;
+    #lottie-animation {
+        max-width: 10rem;
     }
 
     .container {
@@ -373,13 +374,17 @@ p {
     }
 }
 
-@media (max-width: 380px) and (max-width: 667px){
-    .loading-image {
-        max-width: 5rem;
+@media (max-width: 380px) and (max-height: 668px){
+    #lottie-animation {
+        max-width: 6rem;
     }
 
     .container {
         margin-top: 25%; 
+    }
+
+    .container h1 {
+        line-height: 4rem;
     }
 
     .upper {

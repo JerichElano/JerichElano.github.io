@@ -11,4 +11,23 @@ window.addEventListener('load', () => {
             loadingScreen.style.display = 'none'; // Hide after transition
         }, 500); // Match CSS transition duration
     }, gifDuration);
+
+    // Custom cursor logic
+    const customCursor = document.querySelector('.custom-cursor');
+    const hoverElements = document.querySelectorAll('.btn, .socials-container a');
+
+    hoverElements.forEach(element => {
+        element.addEventListener('mouseleave', () => {
+            customCursor.style.display = 'block';
+        });
+
+        element.addEventListener('mouseenter', () => {
+            customCursor.style.display = 'none';
+        });
+    });
+
+    document.addEventListener('mousemove', (e) => {
+        customCursor.style.left = `${e.clientX - 16}px`; // Offset to center 32x32 image
+        customCursor.style.top = `${e.clientY - 16}px`;
+    });
 });

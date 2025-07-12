@@ -96,7 +96,6 @@ body {
     height: 100vh;
     width: 100%;
     color: var(--frost-white);
-    /* border: 1px solid #ccc; */
     padding: 20px;
 }
 
@@ -133,7 +132,6 @@ p {
 }
 
 .lower .logo {
-    /* max-height: 2rem; */
     width: 96px; 
     height: 40px; 
     object-fit: cover; 
@@ -159,8 +157,8 @@ p {
 }
 
 .lower .btn:hover {
-  box-shadow: inset 200px 100px 0 100px var(--accent2);
-  color: var(--frost-white);
+    box-shadow: inset 200px 100px 0 100px var(--accent2);
+    color: var(--frost-white);
 }
 
 .lower p {
@@ -177,6 +175,15 @@ p {
 
 .fa-linkedin:hover, .fa-facebook:hover, .fa-github:hover {
     color: var(--light-blue);
+}
+
+.custom-cursor {
+    position: fixed;
+    pointer-events: none;
+    width: 32px;
+    height: 32px;
+    z-index: 1000;
+    display: none;
 }
 
 /* auto scroll */

@@ -44,6 +44,7 @@ body {
     height: 100vh;
     margin: 0;
     overflow: hidden;
+    cursor: none; /* Hide default cursor everywhere */
 }
 
 @keyframes gradient {
@@ -70,7 +71,6 @@ body {
     justify-content: center;
     z-index: 9999;
     transition: transform 0.5s ease-out;
-    /* animation: slideUp 1s ease-out forwards; */
     animation-delay: 2s;
 }
 
@@ -161,6 +161,10 @@ p {
     color: var(--frost-white);
 }
 
+.lower .socials-container a {
+    cursor: default; /* Show default cursor */
+}
+
 .lower p {
     margin-top: 1rem;
 }
@@ -183,7 +187,7 @@ p {
     width: 32px;
     height: 32px;
     z-index: 1000;
-    display: none;
+    display: block; /* Visible by default */
 }
 
 /* auto scroll */

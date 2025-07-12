@@ -17,12 +17,12 @@ window.addEventListener('load', () => {
     const hoverElements = document.querySelectorAll('.btn, .socials-container a');
 
     hoverElements.forEach(element => {
-        element.addEventListener('mouseleave', () => {
-            customCursor.style.display = 'block';
+        element.addEventListener('mouseenter', () => {
+            customCursor.style.display = 'none'; // Hide custom cursor on hover
         });
 
-        element.addEventListener('mouseenter', () => {
-            customCursor.style.display = 'none';
+        element.addEventListener('mouseleave', () => {
+            customCursor.style.display = 'block'; // Show custom cursor when leaving
         });
     });
 

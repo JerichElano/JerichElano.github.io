@@ -54,7 +54,7 @@ body {
     height: 100vh;
     margin: 0;
     overflow: hidden;
-    cursor: none; /* Hide default cursor everywhere */
+    /* cursor: none; Hide default cursor everywhere */
 }
 
 @keyframes gradient {

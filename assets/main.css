@@ -33,6 +33,16 @@
     font-style: normal;
 }
 
+::selection {
+    color: var(--frost-white); /* Text color when highlighted */
+    background: var(--accent2); /* Semi-transparent background for readability */
+}
+
+::-moz-selection {
+    color: red; /* For Firefox compatibility */
+    background: var(--accent2);
+}
+
 body {
     display: flex;
     align-items: center;
